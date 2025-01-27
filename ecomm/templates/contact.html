@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block 'main' %}
+
+<div class="row">
+    <div class="col-md-12 mt-3">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7566.412733806416!2d73.83834620638713!3d18.519574228807464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3ec1207915%3A0xb73335cd0d52335c!2sItvedant%20Pvt%20Ltd%20Pune!5e0!3m2!1sen!2sin!4v1686646127263!5m2!1sen!2sin" 
+        width="100%" height="400" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div><!--google maps end-->
+
+    <div class="col-md-6 mt-5">
+        <h4><i class="bi bi-building-fill text-danger"></i> </h4>
+        <hr>
+        2nd Floor, Landmark Building,<br>
+        Near F C college,<br>
+        Pune-411002,<br>
+        Maharashtra<br>
+        <h6 class="mt-2"><i class="bi bi-telephone-fill text-danger"></i>&nbsp;&nbsp;&nbsp;8149590365</h6>
+        <h6 class="mt-2"><i class="bi bi-envelope-fill text-danger"></i>&nbsp;&nbsp;&nbsp;ekart@gmail.com</h6>
+    </div><!--address mobile and email ends-->
+
+    <div class="col-md-6 mt-5">
+        <h4><i class="bi bi-question-circle-fill text-danger"></i></h4>
+        <hr>
+        <div class="mb-3">
+        <label for="Input1" class="form-label"><strong>Name</strong></label>
+        <input type="text" class="form-control" name="fname" id="Input1" placeholder="Enter Full Name">
+        </div>
+        <div class="mb-3">
+            <label for="Input2" class="form-label"><strong>Mobile</strong></label>
+            <input type="number" class="form-control" name="fnumber" id="Input2" placeholder="Enter Mobile Number">
+        </div>
+        <div class="mb-3">
+            <label for="Input3" class="form-label"><strong>Name</strong></label>
+            <input type="email" class="form-control" name="femail" id="Input3" placeholder="Enter Email">
+        </div>
+        <div class="mb-3">
+            <label for="Input4" class="form-label"><strong>Message</strong></label>
+            <textarea name="Message" id="Input4" class="form-control" cols="30" rows="5" placeholder="Enter your Message"></textarea>
+        </div>
+        <div class="mb-3">
+            <input type="submit" class="btn btn-danger" value="Submit">
+        </div>
+            
+    </div><!--contact ends-->
+
+
+</div>
+
+
+{% endblock 'main' %}
