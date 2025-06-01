@@ -12,7 +12,6 @@
             <hr>
             <p><strong>Customer Userame: </strong>{{x.userid.username}}</p>
             <p><strong>Email ID: </strong>{{x.userid.email}}</p>
-            <!--<p><strong>Mobile no: </strong>888888888</p>-->
         </div>
         {% endif %}
         {% endfor %}
@@ -39,7 +38,7 @@
                     {% endif %}
                     <p><strong>Quantity:</strong>&nbsp;&nbsp;{{x.qty}}</p>
                     <p><strong>Price per qty: &#8377;</strong>{{x.pid.price}}</p>
-                    <p><strong>Total amount: &#8377;</strong>{{x.amt}}</p> 
+                    <p><strong>Total amount: &#8377;</strong>{{x.amt}}</p>
                     <a href="/removeorder/{{x.id}}"><button class="btn btn-danger">Remove</button></a>
                 </div>
             </div>

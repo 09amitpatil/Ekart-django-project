@@ -20,14 +20,9 @@ def products(request):
 
 def viewcart(request):
     c = Cart.objects.filter(userid=request.user.id)
-    # print(c)
-    # print(c[0].userid)
-    # print(c[0].userid.is_staff)
-    # print(c[0].pid.name)
     sum = 0
     for x in c:
         sum = sum+x.pid.price*x.qty
-        # print(sum)
 
     context = {}
     context['data'] = c
